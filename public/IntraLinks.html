@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <title>IntraLink</title>
+          <style>
+                    ul {
+                              list-style: none;
+                              display: flex;
+                    }
+
+                    li {
+                              margin-right: 50px;
+                              border: 2px solid black;
+                              padding: 5px;
+                              text-align: center;
+                              width: 200px;
+                    }
+
+                    .box {
+                              background-color: gray;
+                              color: white;
+                              /* border: 2px solid black; */
+                              padding: 10px;
+                              margin-left: 10px;
+                    }
+
+                    .box:target {
+                              background-color: black;
+                              color: white;
+                    }
+
+                    .box:hover {
+                              background-color: green;
+                    }
+
+                    .container {
+                              display: grid;
+                              grid-template-columns: 3fr 3fr 3fr 3fr;
+                    }
+
+                    a:link {
+                              color: red;
+                    }
+
+                    a:active {
+                              color: greenyellow;
+                    }
+
+                    a:visited {
+                              color: gray;
+                    }
+
+                    /* remove underline from link */
+                    a {
+                              text-decoration: none;
+                    }
+
+                    /* add underline on link  hover*/
+                    a:hover {
+                              text-decoration: underline;
+                    }
+          </style>
+</head>
+
+<body>
+          <ul>
+                    <li><a href="#html">HTML</a></li>
+                    <li><a href="#css">CSS</a></li>
+                    <li><a href="#js">JS</a></li>
+                    <li><a href="#react">REACT</a></li>
+          </ul>
+          <div class="container">
+                    <div id="html" class="box">
+                              <h2>HTML</h2>
+                              <p>It is a markup Language.</p>
+                    </div>
+                    <div id="css" class="box">
+                              <h2>CSS</h2>
+                              <p>It sets the style</p>
+                    </div>
+                    <div id="js" class="box">
+                              <h2>Javascript</h2>
+                              <p>It is a client side scripting language.</p>
+                    </div>
+
+                    <div id="react" class="box">
+                              <h2>React</h2>
+                              <p>It is a js library.</p>
+                    </div>
+          </div>
+</body>
+
+</html>

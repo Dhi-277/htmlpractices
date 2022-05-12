@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <title>Nav-menu</title>
+          <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+          <style>
+                    nav div{
+                              background-color: greenyellow;
+                              width: 120px;
+                              margin-right: 20px;
+                              border-radius: 20px;
+                              text-align: center;
+                              padding: 5px;
+                              transition: 2s;
+                    }
+                    nav div:hover{
+                              background-color: rgb(4, 17, 27);
+                              color: white;
+                              cursor: grabbing;
+                              font-size: 20px;
+                              width: 160px;
+                              transition: 2s;
+                    }
+                    nav {
+                              display: flex;
+                    }
+          </style>
+</head>
+
+<body>
+          <nav>
+                    <div> <span class="bi bi-house-fill"></span> Home</div>
+                    <div> <span class="bi bi-bell-fill"></span> Notifications</div>
+                    <div> <span class="bi bi-bluetooth"></span> Connect</div>
+                    <div> <span class="bi bi-globe"></span> Network</div>
+          </nav>
+</body>
+
+</html>
